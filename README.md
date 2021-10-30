@@ -18,3 +18,6 @@ M2_HOME - C:\Maven
 PATH - %M2_HOME%\bin %JAVA_HOME%\bin %MAVEN_HOME%\bin
 
 It tooke me 5 days to collect all the information needed for this project.
+
+
+To make it work add URL for webdriver.
