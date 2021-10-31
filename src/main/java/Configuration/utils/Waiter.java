@@ -1,16 +1,13 @@
 package Configuration.utils;
 
-import java.time.Duration;
-import java.util.Objects;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
+
+import java.time.Duration;
+import java.util.Objects;
 
 import static Configuration.utils.DriverFactory.getDriver;
 
@@ -42,11 +39,17 @@ public class Waiter {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
+//    public static Boolean waitUntilElementImageDisplayed(WebElement element) {
+//        Boolean p = (Boolean) ((JavascriptExecutor)WebDriverFactory.getWebDriver()) .executeScript("return arguments[0].complete " + "&& typeof arguments[0].naturalWidth != \"undefined\" " + "&& arguments[0].naturalWidth > 0", element);
+//        return p;
+//    }
+
     public static void waitUntilLandingPageIsLoaded() {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bg")));
     }
 
     public static void waitUntilElementIsVisible(By by) {
+
         wait.until(driver -> driver.findElement(by));
     }
 

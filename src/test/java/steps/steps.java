@@ -1,18 +1,11 @@
 package steps;
 
-import java.util.ArrayList;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
-import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import lombok.Data;
-import rollingslots.api.Pojo.LoginRes;
 import rollingslots.api.Pojo.LoginTo;
 
 import static io.restassured.RestAssured.given;

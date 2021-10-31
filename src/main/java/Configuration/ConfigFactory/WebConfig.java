@@ -3,6 +3,6 @@ import lombok.Data;
 import Configuration.utils.WebDriverFactory;
 @Data
 public class WebConfig {
-    private String baseurl;
+    private String baseUrl;
     private WebDriverFactory.Browser browser;
 }

@@ -1,19 +1,14 @@
 package rollingslots.api.Pojo;
-        import java.util.ArrayList;
 
-        import com.fasterxml.jackson.annotation.JsonFormat;
-        import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-        import com.fasterxml.jackson.annotation.JsonProperty;
-        import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-        import lombok.Data;
-        import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-        import lombok.Data;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Data;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CreateUser {
     private String login;
     private String password;
+    private String token;
 }
 //public class steps {
 //    @JsonProperty("id")
